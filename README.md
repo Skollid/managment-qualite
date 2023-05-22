@@ -55,3 +55,22 @@ Si vous rencontrez des problèmes avec ce projet, veuillez ouvrir une issue sur 
 8. Dans le projet créer un fichier ".github/workflows/build.yml" et son contenu
 9. Dans le projet créer un fichier "sonar-project.properties" et son contenu
 10. Vous pouvez push les modifications et attendre que Sonarcloud opère ;)
+
+## Jenkins
+
+Sous Mac :
+1. brew install jenkins-lts
+2. brew services start jenkins-lts
+3. http://localhost:8080/
+4. Rentrer les petites informations demandées
+5. localhost:8080/manage//pluginManager/ puis ajouter "SonarQube Scanner"
+6. Relancer Jenkins
+7. http://localhost:8080/manage/configure
+8. Dans la partie : "SonarQube servers" 
+9. Le nom importe peu
+10. L'url est "https://sonarcloud.io"
+11. Valider les modifications
+12. De retour sur l'accueil, créer un job
+13. Le nom importe peu, choisissez "Pipeline"
+14. Choisissez les options que vous voulez et sélectionner "Projet gitHub" pour renseigner l'url du repos.
+15. Valider et lancer vos builds
