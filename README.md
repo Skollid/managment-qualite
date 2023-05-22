@@ -43,7 +43,7 @@ Veillez à ne pas inclure d'informations sensibles, comme les mots de passe de l
 
 Si vous rencontrez des problèmes avec ce projet, veuillez ouvrir une issue sur [GitHub](https://github.com/IreneLefevre/managment-qualite/issues).
 
-## SoundCloud
+## SonarCloud
 
 1. Créer un compte sur SonarCloud
 2. Connecter GitHub à SonarCloud
