@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fiche Client</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .client-info { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fiche Client</h1>
+        <div id="client-info">
+            <!-- Les informations du client seront affichées ici -->
+        </div>
+    </div>
+
+    <script>
+        // Appelez votre script PHP pour récupérer les informations du client
+        fetch('get_client_info.php')
+            .then(response => response.json())
+            .then(client => {
+                let clientInfo = document.getElementById('client-info');
+                clientInfo.innerHTML = `
+                    <div class="client-info">
+                        <h2>${client.name}</h2>
+                        <p>Email : ${client.email}</p>
+                        <p>Numéro de téléphone : ${client.phone}</p>
+                    </div>`;
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>
