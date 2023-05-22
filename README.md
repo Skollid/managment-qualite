@@ -30,7 +30,11 @@ Avant qu'un changement soit considéré comme terminé ("done"), il doit être r
 
 Suivre ce processus aide à garantir que le code est de haute qualité, qu'il fonctionne comme prévu, et qu'il n'introduit pas de nouveaux problèmes dans l'application.
 
+## Utilisation de SQL pour l'insertion de données
 
+Ce projet utilise MySQL pour stocker les données des clients. Pour insérer des données dans la base de données, vous pouvez utiliser la commande `INSERT INTO`.
+Il y a un fichier SQL/client.sql qui contient toutes les données.
+Au premier lancement il suffit d'executer tout le fichier en ligne de commande. SI la table est déjàa crée il suffit de copier coller l'INSERT uniquement.
 ## Sécurité
 
 Veillez à ne pas inclure d'informations sensibles, comme les mots de passe de la base de données, directement dans vos scripts. Assurez-vous que votre serveur est configuré de manière sécurisée.
