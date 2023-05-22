@@ -43,3 +43,15 @@ Veillez à ne pas inclure d'informations sensibles, comme les mots de passe de l
 
 Si vous rencontrez des problèmes avec ce projet, veuillez ouvrir une issue sur [GitHub](https://github.com/IreneLefevre/managment-qualite/issues).
 
+## SoundCloud
+
+1. Créer un compte sur SonarCloud
+2. Connecter GitHub à SonarCloud
+3. Analyze projects ("https://sonarcloud.io/projects/create")
+4. Choisir son projet -> Set up
+5. Une fois rediriger sur la page : https://sonarcloud.io/project/configuration?id=Le_nom_de_votre_projet
+6. With GitHub Actions (les explications sont données pour poursuivre la config) 
+7. Créer un GitHub Secret (Settings > Secrets > Actions)
+8. Dans le projet créer un fichier ".github/workflows/build.yml" et son contenu
+9. Dans le projet créer un fichier "sonar-project.properties" et son contenu
+10. Vous pouvez push les modifications et attendre que Sonarcloud opère ;)
