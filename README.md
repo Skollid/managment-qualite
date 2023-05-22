@@ -63,7 +63,7 @@ Sous Mac :
 2. brew services start jenkins-lts
 3. http://localhost:8080/
 4. Rentrer les petites informations demandées
-5. localhost:8080/manage/pluginManager/ puis ajouter "SonarQube Scanner"
+5. http://localhost:8080/manage/pluginManager/ puis ajouter "SonarQube Scanner"
 6. Relancer Jenkins
 7. http://localhost:8080/manage/configure
 8. Dans la partie : "SonarQube servers" 
